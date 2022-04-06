@@ -70,6 +70,7 @@ li.remove();
 
 
 bridge(`Bonus`);
+
 //  B  O  N  U  S 
 
 //13a
@@ -117,10 +118,7 @@ const newRay = document.createElement(`span`);
 
 function adding (a){
     for(i=0; i<a.length; i++){
-        console.log(i);
         newRay.innerText += a[i]+ ` `;
-        console.log(newRay.innerText);
-
     }
     body.append(newRay);
 }
