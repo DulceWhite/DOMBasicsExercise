@@ -12,7 +12,7 @@ const xMen = document.getElementById(`x-men`);
 const centered = document.getElementsByClassName(`center`);
 
 //3
-const batman = document.querySelector(`div`);
+const batman = document.querySelector(`#batman`);
 // console.log(batman.innerHTML);
 
 //4
@@ -75,15 +75,13 @@ bridge(`Bonus`);
 
 //13a
 
+const vid = document.querySelectorAll(`div`);
 //13b
 
 const btnt = document.createElement(`input`);
 btnt.type = `checkbox`;
 
 h1.insertAdjacentElement("afterend", btnt);
-
-
-const vid = document.querySelectorAll(`div`);
 
 btnt.onclick = () =>{
     
@@ -99,7 +97,11 @@ document.querySelectorAll(`div`).forEach(function (elem){
     elem.classList.toggle(`background`);
 });
 
+//or
 
+// for(d of divs){
+//     d.classList.toggle(`background`);
+// }
 
 //14
 
@@ -124,3 +126,18 @@ function adding (a){
 }
 
 adding(avengers);
+
+//or
+
+// for(a of avengers){
+//     body.append(a + ` `);
+// }
+
+//or
+
+// for (item of avengers){
+//     const newSpan = document.createElement(`span`);
+//     newSpan.innerText = item;
+//     body.insertAdjacentElement(`beforeend`, newSpan);
+
+// }
